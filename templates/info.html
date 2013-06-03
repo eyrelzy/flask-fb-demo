@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Info!</h2>
+<h3> You have {{ (friends|length) }} total friends. </h3>
+{% for name, id in friends %}
+Friend: {{ name }} ({{ id }}) <br>
+{% endfor %}
+{% endblock body %}

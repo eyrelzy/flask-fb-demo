@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project NagMe</title>
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body>
+    <div id="box">
+      <div class="header">
+        {% include "includes/header.html" %}
+      </div>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      {% for message in messages %}
+      <div class="flashes">{{ message }}</div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+      <div id="content">
+        {% block body %}
+        {% endblock body %}
+      </div>
+      <div class="footer">
+        {% include "includes/footer.html" %}
+      </div>
+    </div>
+  </body>
+</html>
+
