@@ -1,9 +1,9 @@
-Project NagMe
+Facebook Flask Demo App
 =============
 
-This is a new project in the works, written in Python, designed for deployment
-to Heroku_.
-.. _Heroku: http://www.heroku.com/
+This is an example Flask application to demonstrate how to use the Facebook API. It's
+pretty simple, and has the user log in with Facebook and displays their friends.
+Written in Python, designed for deployment to Heroku: http://www.heroku.com/
 
 Run locally
 -----------
